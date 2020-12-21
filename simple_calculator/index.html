@@ -83,7 +83,6 @@
             let x = parseFloat(document.getElementById('no1').value);
             let y = parseFloat(document.getElementById('no2').value);
             let z = x + y;
-            // z = toString(z);
             document.getElementById('solution').innerText = "Result:  " + z;
         }
 
@@ -91,7 +90,6 @@
             let x = parseFloat(document.getElementById('no1').value);
             let y = parseFloat(document.getElementById('no2').value);
             let z = x - y;
-            // z = toString(z);
             document.getElementById('solution').innerText = "Result:  " + z;
         }
 
@@ -99,15 +97,13 @@
             let x = parseFloat(document.getElementById('no1').value);
             let y = parseFloat(document.getElementById('no2').value);
             let z = x * y;
-            // z = toString(z);
-            document.getElementById('solution').innerText = "Result:  " + z;
+            document.getElementById('solution').innerText = `Result:  ${z}`;
         }
 
         function divide(){
             let x = parseFloat(document.getElementById('no1').value);
             let y = parseFloat(document.getElementById('no2').value);
             let z = x  / y;
-            // z = toString(z);
             document.getElementById('solution').innerText = "Result:  " + z;
         }
     </script>
