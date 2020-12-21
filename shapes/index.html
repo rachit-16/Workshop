@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Changer</title>
+
+    <style>
+        .main{
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+        }
+
+        .shape_area{
+            margin-left: 465px;
+            margin-top: 30px;
+            border-style: solid;
+            border-width: 6px;
+            border-color: black;
+            height: 400px;
+            width: 400px;
+            background-color: white;
+        }
+
+        .btn{
+            margin-left: 5px;
+            margin-right: 5px;
+            width: 100px;
+            height: 35px;
+            font-size: 17px;
+            border-radius: 7px;
+        }
+    </style>
+
+    <script>
+        function make_rectangle(){
+            document.getElementById("shape").style['height'] = "170px";
+            document.getElementById("shape").style['width'] = "300px";
+            document.getElementById("shape").style['background-color'] = "red";
+            document.getElementById("shape").style['margin-left'] = "50px";
+            document.getElementById("shape").style['margin-top'] = "115px";
+            document.getElementById("shape").style['border-style'] = "dashed";
+            document.getElementById("shape").style['border-color'] = "black";
+            document.getElementById("shape").style['border-width'] = "4px";
+            document.getElementById("shape").style['border-radius'] = "0%";
+        }
+
+        function make_square(){
+            document.getElementById("shape").style['height'] = "200px";
+            document.getElementById("shape").style['width'] = "200px";
+            document.getElementById("shape").style['background-color'] = "yellow";
+            document.getElementById("shape").style['margin-left'] = "100px";
+            document.getElementById("shape").style['margin-top'] = "100px";
+            document.getElementById("shape").style['border-style'] = "dashed";
+            document.getElementById("shape").style['border-color'] = "black";
+            document.getElementById("shape").style['border-width'] = "4px";
+            document.getElementById("shape").style['border-radius'] = "0%";
+        }
+
+        function make_circle(){
+            document.getElementById("shape").style['height'] = "300px";
+            document.getElementById("shape").style['width'] = "300px";
+            document.getElementById("shape").style['background-color'] = "green";
+            document.getElementById("shape").style['margin-left'] = "50px";
+            document.getElementById("shape").style['margin-top'] = "50px";
+            document.getElementById("shape").style['border-style'] = "dashed";
+            document.getElementById("shape").style['border-color'] = "black";
+            document.getElementById("shape").style['border-width'] = "4px";
+            document.getElementById("shape").style['border-radius'] = "50%";
+        }
+    </script>
+</head>
+<body style="background-color: rgb(200, 196, 196);">
+    <div class="main">
+        <h2 style="margin-top: 20px; ; font-size: 30px; text-align: center;">Changing Shapes</h2>
+
+        <div class="shape_area">
+            <div id="shape"></div>
+        </div>
+
+        <div style="margin-left: 510px; margin-top: 40px; display: flex;">
+            <button class="btn" style="background-color: red;" onclick="make_rectangle()">Rectangle</button>
+            <button class="btn" style="background-color: yellow;" onclick="make_square()">Square</button>
+            <button class="btn" style="background-color: green;" onclick="make_circle()">Circle</button>
+        </div>
+    </div>
+</body>
+</html>
