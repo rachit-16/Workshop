@@ -4,7 +4,7 @@
 
 body{
     background-image: url(../images/floor.jpg);
-    background-size: 300vh;
+    background-size: 100rem;
     background-attachment: fixed;
     min-height: 300px;
     font-family: arial,sans-serif;
@@ -22,7 +22,7 @@ h1{
 
 #suport{
     position: absolute;
-    margin-bottom: 2em;
+    margin-bottom: 5em;
     bottom: 0;
     width: 100%;
     text-align:center;
