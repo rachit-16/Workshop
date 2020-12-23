@@ -1,0 +1,81 @@
+:root{
+    --animation-duration: 1s;
+}
+
+body{
+    background-image: url(../images/floor.jpg);
+    background-size: 300vh;
+    background-attachment: fixed;
+    min-height: 300px;
+    font-family: arial,sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+h1{
+    margin: 0.1em 1.1em;
+    font-size: 3em;
+    font-weight: bold;
+    color: greenyellow;
+}
+
+#suport{
+    position: absolute;
+    margin-bottom: 2em;
+    bottom: 0;
+    width: 100%;
+    text-align:center;
+}
+
+#smash{
+    animation-name: smash;
+    animation-duration: var(--animation-duration);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: bottom;
+}
+
+#translateShadow,#rotateImg{
+    border-radius: 50%;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+}
+
+#translateShadow{
+    animation-name: translateShadow;
+    animation-duration: var(--animation-duration);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+#rotateImg{
+    background-image: url(../images/basketball.png);
+    background-size: 100%;
+    animation-name: rotateImg;
+    animation-duration: calc(var(--animation-duration) * 5.3);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes translateShadow {
+    0% {
+        transform: translateY(150);
+        box-shadow: 20px 20px 10px #0d0d13
+    }
+    100% {
+        transform: translateY(-360px);
+        box-shadow: 10px 400px  350px #111113}
+}
+
+@keyframes smash {
+    0% {transform: scaleY(.82)}
+    15%  {transform: scaleY(1)}
+}
+
+@keyframes rotateImg {
+    100% {transform:rotate(360deg)}
+}
