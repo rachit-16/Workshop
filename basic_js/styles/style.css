@@ -5,15 +5,20 @@
 }
 
 body{
+    padding: 5px;
     min-width: 550px;
     background-color: blanchedalmond;
 }
 
 h2{
-    margin: 0.2em;
+    margin: 0.1em;
     font-size: 2.5em;
     text-align: center;
     /* background-color: greenyellow; */
+}
+
+#main{
+    margin: 5px;
 }
 
 table{
