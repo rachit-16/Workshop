@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 550px;
+    background-color: blanchedalmond;
+}
+
+h2{
+    margin: 0.2em;
+    font-size: 2.5em;
+    text-align: center;
+    /* background-color: greenyellow; */
+}
+
+table{
+    margin: auto;
+    padding: 5px;
+    min-width: 475px;
+    border: 3px solid black;
+}
+
+caption{
+    margin: 0.3em 0.3em;
+    font-size: 1.5em;
+    font-weight: bold;
+    /* background-color: blueviolet; */
+}
+
+th{
+    background-color: gold;
+}
+
+th, td{
+    padding: 3px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    /* background-color: tomato; */
+}
+
+#table_area{
+    margin: auto;
+    border: 5px solid green;
+    width: 70%;
+    min-width: 520px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightpink;
+}
+
+#table_container{
+    padding: 5px;
+}
+
+.departments{
+    font-size: 1.6em;
+    text-align: center;
+    background-color: tomato;
+}
+
+.batches{
+    background-color: cadetblue;
+}
+
+.sno{
+    background-color: lightsteelblue;
+}
+
+.data{
+    background-color: lightgreen;
+}
+
+#btn_container{
+    padding: 5px;
+    /* background-color: chocolate; */
+}
+
+#fill_btn{
+    width: 4.8em;
+    height: 2.1em;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10%;
+    background-color: rgb(223, 219, 219);
+}
+
+#fill_btn:hover{
+    cursor: pointer;
+}
